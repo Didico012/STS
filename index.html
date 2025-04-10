@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Viaturas - STS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">STS - Controle de Viaturas</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="cadastro.html">Cadastrar Viatura</a>
+            <a href="relatorios.html">Relatórios</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="status-filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="available">Disponíveis</button>
+            <button class="filter-btn" data-filter="unavailable">Baixadas</button>
+            <button class="filter-btn" data-filter="external">Oficina Externa</button>
+        </div>
+
+        <div class="vehicles-grid" id="vehiclesGrid">
+            <!-- Vehicles will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal for vehicle details -->
+    <div id="vehicleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="vehicleDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

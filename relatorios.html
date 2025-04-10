@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - STS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">STS - Controle de Viaturas</div>
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="cadastro.html">Cadastrar Viatura</a>
+            <a href="relatorios.html" class="active">Relatórios</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="reports-container">
+            <h2>Relatórios</h2>
+            <div class="report-filters">
+                <div class="form-group">
+                    <label for="dateStart">Data Inicial:</label>
+                    <input type="date" id="dateStart">
+                </div>
+                <div class="form-group">
+                    <label for="dateEnd">Data Final:</label>
+                    <input type="date" id="dateEnd">
+                </div>
+                <button id="generateReport" class="submit-btn">Gerar Relatório</button>
+            </div>
+
+            <div id="reportResults" class="report-results">
+                <!-- Report results will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="relatorios.js"></script>
+</body>
+</html>
